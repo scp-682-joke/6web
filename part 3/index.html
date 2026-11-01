@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Part 3 | Assignment 6</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <nav class="site-header">
+            <ul class="navigation-bar">
+                <li><a href="../index.html">Part 1</a></li>
+                <li><a href="../part 2/index.html">Part 2</a></li>
+                <li><a href="index.html" aria-current="page">Part 3</a></li>
+                <li><a href="../part 4/index.html">Part 4</a></li>
+                <li><a href="../part 5/index.html">Part 5</a></li>
+            </ul>
+        </nav>
+        <header class="header"><h1>Assignment 6. jQuery</h1></header>
+        <main class="content">
+            <h2>Part 3. DOM Manipulation with jQuery</h2>
+            <section>
+                <h3>Task 5. Add &amp; Remove Elements</h3>
+                <div class="controls">
+                    <button class="button" id="add-item">Add Item</button>
+                    <button class="button" id="prepend-item">Add to Start</button>
+                    <button class="button" id="remove-item">Remove Item</button>
+                </div>
+                <p>Add Item adds to the end. Remove Item removes the last item.</p>
+                <ul id="item-list"><li>Item 1</li><li>Item 2</li></ul>
+            </section>
+            <section>
+                <h3>Task 6. Modifying Attributes</h3>
+                <img id="attribute-image" class="demo-image" src="../images/day.svg" alt="Mountains and a lake in daylight" width="480" height="260">
+                <div class="controls">
+                    <button class="button" id="change-image">Change image</button>
+                    <button class="button" id="change-link">Change link</button>
+                </div>
+                <p><a id="resource-link" href="https://jquery.com/">Visit jQuery</a></p>
+            </section>
+            <section>
+                <h3>Task 7. Form Interaction</h3>
+                <form id="profile-form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                </form>
+                <div class="panel">
+                    <h4>Live preview</h4>
+                    <p>Name: <span id="preview-name">Not entered</span></p>
+                    <p>Email: <span id="preview-email">Not entered</span></p>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer"><p>Zhibek Slambek | SE-2530</p></footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

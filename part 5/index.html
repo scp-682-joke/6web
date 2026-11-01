@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Part 5 | Assignment 6</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <nav class="site-header">
+            <ul class="navigation-bar">
+                <li><a href="../index.html">Part 1</a></li>
+                <li><a href="../part 2/index.html">Part 2</a></li>
+                <li><a href="../part 3/index.html">Part 3</a></li>
+                <li><a href="../part 4/index.html">Part 4</a></li>
+                <li><a href="index.html" aria-current="page">Part 5</a></li>
+            </ul>
+        </nav>
+        <header class="header"><h1>Assignment 6. jQuery</h1></header>
+        <main class="content">
+            <h2>Part 5. Mini Project</h2>
+            <h3>Task 11. Interactive Accordion Menu</h3>
+            <p>A small study guide. Select a topic to open or close it.</p>
+            <div class="accordion">
+                <h4><button class="accordion-button" id="selectors-heading" aria-expanded="false" aria-controls="selectors-panel">What is a selector?</button></h4>
+                <div class="accordion-panel" id="selectors-panel" role="region" aria-labelledby="selectors-heading"><p>A selector finds HTML elements. Use # for an ID, . for a class, or a tag name such as p.</p><code>$("#title").text("Hello!");</code></div>
+                <h4><button class="accordion-button" id="effects-heading" aria-expanded="false" aria-controls="effects-panel">How do effects work?</button></h4>
+                <div class="accordion-panel" id="effects-panel" role="region" aria-labelledby="effects-heading"><p>Effects change visibility. Try fading an image or sliding a panel open and closed.</p><code>$("#panel").slideToggle(400);</code></div>
+                <h4><button class="accordion-button" id="animation-heading" aria-expanded="false" aria-controls="animation-panel">How do I animate an element?</button></h4>
+                <div class="accordion-panel" id="animation-panel" role="region" aria-labelledby="animation-heading"><p>Use animate() to change numeric CSS properties over time. Chain calls to run them in order.</p><code>$("#box").animate({ left: 100 }, 600);</code></div>
+            </div>
+        </main>
+        <footer class="site-footer"><p>Zhibek Slambek | SE-2530</p></footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
